@@ -13,6 +13,8 @@ if (chosen_system == '2'):
   height_unit = 'feet'
   weight_unit = 'pounds'
 
+print("hello world!")
+
 print('Please enter your height in ' + height_unit)
 user_height = float(input('Your height: '))
 

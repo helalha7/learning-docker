@@ -10,12 +10,13 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	mux := http.NewServeMux()
 
+	mux := http.NewServeMux()
 	mux.HandleFunc("/", Handler)
 
 	log.Println("Starting server on port :8080 ...")
 	if err := http.ListenAndServe(":8080", mux); err != nil {
 		log.Fatal(err)
 	}
+
 }
